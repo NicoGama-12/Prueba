@@ -1,0 +1,156 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.navbar-logo{
+    width: 150px;
+}
+
+.navbar-container{
+    background-color: #C4D69A;
+}
+
+.img-fondo-index{
+    width: 100%;
+    height: 100%
+}
+
+.hero{
+    text-align: center;
+    background-color: #30adad;
+}
+
+.grid-container-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-item-index {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid-item-index img {
+    width: 100%;
+}
+
+.text-index {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .grid-container-index {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+   
+    .grid-item-index:nth-child(3) {
+        order: 4; /* Cambia el orden con respecto al elemento 4 */
+    }
+
+    .grid-item-index:nth-child(4) {
+        order: 3; /* Cambia el orden con respecto al elemento 3 */
+    }
+}
+
+.footer {
+    background-color: #191919;
+    padding: 20px;
+    text-align: center;
+}
+  
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.social a {
+    display: inline-block;
+    text-decoration: none;
+}
+  
+.social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+  
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.productos-container{
+    background-color: black;
+    color: #fff;
+    width: 300px;
+    margin: 10px;
+}
+
+.img-fondo{
+    width: 100%;
+}
+
+.map-contacto{
+    display: flex;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite que el textarea cambie de tamaño verticalmente */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
